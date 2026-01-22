@@ -20,10 +20,10 @@ const RedeemView: React.FC<RedeemViewProps> = ({ phone, rank, onBack }) => {
   }, [phone]);
 
   const getTier = (r: number) => {
-    if (r <= 3) return { id: 1, name: "巅峰特等奖", color: "from-amber-500 to-yellow-600", detail: "包含：周年限定礼盒 + 50元储值卡" };
-    if (r <= 10) return { id: 2, name: "卓越优胜奖", color: "from-slate-400 to-slate-600", detail: "包含：定制咖啡杯 + 30元代金券" };
-    if (r <= 50) return { id: 3, name: "进取达人奖", color: "from-orange-400 to-orange-600", detail: "包含：免单券3张 + 限定周边" };
-    return { id: 4, name: "门店回馈奖", color: "from-blue-400 to-blue-500", detail: "包含：限定贴纸 + 8.8折优惠券" };
+    if (r <= 3) return { id: 1, name: "巅峰特等奖", color: "from-amber-500 to-yellow-600", detail: "包含：库迪随行杯 + 钥匙扣或挂饰任选一件" };
+    if (r <= 10) return { id: 2, name: "卓越优胜奖", color: "from-slate-400 to-slate-600", detail: "包含：哪吒徽章+冰箱贴组合" };
+    if (r <= 50) return { id: 3, name: "进取达人奖", color: "from-orange-400 to-orange-600", detail: "包含：历史联名周边冰箱贴或吧唧徽章任选一件" };
+    return { id: 4, name: "门店回馈奖", color: "from-blue-400 to-blue-500", detail: "包含：历史联名贴纸任选一张" };
   };
 
   const tier = getTier(rank);
