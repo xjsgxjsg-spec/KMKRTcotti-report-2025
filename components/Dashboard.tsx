@@ -238,7 +238,7 @@ const Dashboard: React.FC<DashboardProps> = ({ data, onLogout }) => {
 
   const renderCategorySlide = () => {
     const counts = data.categoryCounts;
-    const values = Object.values(counts);
+    const values = Object.values(counts) as number[];
     const maxVal = Math.max(...values, 1);
 
     const radarData = [
